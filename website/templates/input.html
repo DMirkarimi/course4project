@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+C4 group 10
+{% endblock title %}
+
+{% block body %}
+            <div id='columns'>
+                <ul>
+                    <h1> Voer hieronder je zoekwoord in </h1>
+                    <hr>
+                    <br>
+                    <form method="POST" action="/input">
+                    <input type="text" name="zoekwoord" required>
+                    <input type="submit" value="Submit">
+                        <input type="radio" name="search_type" value="protein_name" checked="checked">
+                        <label for="protein_name">Protein</label>
+                        <input type="radio" name="search_type" value="read_id">
+                        <label for="read_id">fragment_id</label>
+                        <input type="radio" name="search_type" value="tax_id">
+                        <label for="tax_id">taxonomy</label>
+                        <input type="radio" name="search_type" value="accession_code">
+                        <label for="accession_code">accession code</label>
+                    </form>
+                      <hr>
+                    <table border='1'>
+                         <tr>
+                             {% for head in header %}
+                                <th>{{ head }}</th>
+                             {% endfor %}
+                         </tr>
+                    {% for line in info %}
+                        <tr>
+                        {% for item in line %}
+                            <td>{{ item }}</td>
+                        {% endfor %}
+                        </tr>
+                    {% endfor %}
+                    </table>
+                </ul>
+            </div>
+{% endblock body %}

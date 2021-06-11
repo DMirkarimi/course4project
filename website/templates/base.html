@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel='stylesheet' href='{{ url_for('static',filename='styles/mainstyle.css') }}'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+        <li><a class='textlink' id='second' href='/'>HOME</a></li>
+        <li><a class='textlink' id='third' href='input'>Protein search</a></li>
+        <li><a class='textlink' id='fourth' href='infopage'>Information</a></li>
+        </ul>
+    </nav>
+    <div class="parallax" id="test"></div>
+
+        {% block body %}{% endblock body %}
+
+
+    <script src='{{ url_for('static',filename='script/script.js')}}'></script>
+
+</body>
+</html>

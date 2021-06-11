@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+C4 group 10
+{% endblock title %}
+
+{% block body %}
+            <div id='columns'>
+                <ul>
+                    <h1> Info </h1>
+                    <h2>
+                        Deze site kan informatie ophalen uit een zelfgemaakte database
+                        die informatie bevat over de microflora van champignonen mest.
+                        De database bestaat uit DNA fragmenten die zijn geblast door
+                        middel van BLASTx.
+                        <br>
+                        de blast resultaten staan ook in de database.
+                        op de pagina protein search kun je op 5 manieren door de database
+                        zoeken:
+                        <br>
+                        <ol>
+                            <li>protein: </li>
+                            <li>hiermee kun je zoeken op protein name.</li>
+                            <li>fragment id:</li>
+                            <li>hiermee kun je zoeken op fragment id uit de originele
+                                data.</li>
+                            <li>taxonomy:</li>
+                            <li>hiermee kun je zoeken op een taxonomy id of taxonomy
+                                name.</li>
+                            <li>accesssion code:</li>
+                            <li>hiermee kun je zoeken op een accession code.</li>
+                        </ol>
+                        <br>
+                        op de pagina information kun je een grafiek laten maken door
+                        middel van een zoekwoord.
+                        <br>
+                        De applicatie maakt dan een grafiek van
+                        alle organisme met een soortgelijk naam.
+
+                    </h2>
+                    <h2> Deze applicatie is een groepsproduct van Jules Hopstaken,
+                        Stef van Breemen en Dariush Mirkarimi uit klas BIN-1d </h2>
+                </ul>
+            </div>
+{% endblock body %}

@@ -1,0 +1,170 @@
+/*NavBar Style*/
+nav{
+    padding-left: 0;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 999;
+    background-color: #181c1f;
+    margin-top: 0;
+
+}
+
+nav li {
+    float: left;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+nav .textlink {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em 2.5em;
+    text-decoration: none;
+	//font-family: 'Lato', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.563em;
+    margin: 0 auto;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav .textlink:hover {
+    //background-color: #111;
+	text-decoration: none;
+}
+
+
+nav ul {
+    max-width: 90%;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0 auto auto;
+}
+
+
+.textlink:before {
+  content: "";
+  position: absolute;
+  width: 8%;
+  max-width:100%;
+  height: 2px;
+  bottom: 8px;
+  background-color: white;
+
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#first:before{
+
+  width: 6.5em;
+  height: 2px;
+  bottom: 8px;
+  background-color: white;
+}
+
+
+#second:before{
+
+  width: 3em;
+  height: 2px;
+  bottom: 8px;
+  background-color: white;
+}
+
+#third:before{
+
+  width: 6em;
+  height: 2px;
+  bottom: 8px;
+  background-color: white;
+}
+
+
+nav .textlink:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+h1,h2,h3,pre,label {
+    font-weight: 500;
+    color: white;
+    font-family: 'VT323', monospace;
+}
+
+pre {
+    font-weight: 500;
+    color: white;
+    font-family: 'Comic Sans MS', monospace;
+}
+
+h1 {
+   font-size: 6em;
+}
+
+h3 {
+   font-size: 3em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #252525;
+}
+
+#block1{
+    margin-top: 5em;
+    margin-left: 100px;
+}
+
+table{
+    color: white;
+    font-family: Lato, sans-serif;
+}
+
+.parallax {
+    padding-top: 75px;
+	height: 20em;
+    min-height: 5em;
+    width: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image: url("/static/images/champignons.jpg");
+    background-position-y: 0;
+    overflow: hidden;
+}
+
+
+#columns {
+    padding: 0;
+    margin: 0;
+}
+
+#columns ul {
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 8em*/
+    width: auto;
+}
+
+#columns li {
+    width: 33%;
+    display: inline-block;
+    /*font-size: 1em;*/
+    color: white;
+    text-align: left;
+}
+
+td {
+    max-width: 500px;
+    max-height: 80px;
+    overflow: auto;
+    white-space: nowrap;
+}

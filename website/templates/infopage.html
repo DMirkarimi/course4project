@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+C4 group 10
+{% endblock title %}
+
+
+{% block body %}
+    <div id='columns'>
+    <script>
+    function changeimg() {
+        document.getElementById("plot_img").src="{{url}}"}
+    </script>
+        <ul>
+            <h1> Voer hieronder je zoekwoord in </h1>
+            <br>
+            <form method="POST" action="/infopage">
+                <input type="text" name="tax_zoek_woord" required>
+                <input type="submit" value="Submit" >
+            </form>
+            <br>
+            <img id='plot_img' src="{{img_url}}"
+                 style="width:60%" alt="chart">
+        </ul>
+    </div>
+{% endblock body %}
